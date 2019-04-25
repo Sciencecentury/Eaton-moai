@@ -1,1 +1,7 @@
 Hello
+
+slack github 通知処理
+  /github subscribe オーナ名/リポジトリ
+  
+  google calendar 
+      /gcal
