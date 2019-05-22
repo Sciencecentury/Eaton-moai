@@ -22,5 +22,5 @@
 
 
 【カレンダーAPI案】
-
+・googleApi
 
