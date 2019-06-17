@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "ja" dir = "ltr">
+<head>
+    <meta charset="utf-8">
+    <title>新規登録</title>
+    <link type = "text/css" rel = "stylesheet" href = "signUp.css">
+</head>
+<body>
+	<!--<p id = "position">ユーザ名またはパスワードが違います</p>-->
+    <div id = "back">
+    <h1 id = "title">新規登録</h1>
+    <div id = "modal-content">
+		<h1> <p style = "font-size : 40px">登録完了</p></h1>
+	    <p><a id = "modal-close" class = "button-link">了解</a></p>
+    </div>
+	<!--<form action = "signUp.php" method = "post" style = "display:inline">-->
+            <table align = "center" >
+                <tr>
+                <th  align="left">社員番号</th><th><input type = "text" name = "userID"></th>
+                </tr>
+                <tr>
+                <th align="left">パスワード</th><th><input type = "password" name = "password"></th>
+                </tr>
+                <tr>
+                <th align="left">パスワード(確認用)</th><th><input type = "password" name = "checkPassword"></th>
+                </tr>
+                <tr>
+                <th align="left">ユーザー名</th><th><input type = "text" name = "userName"></th>
+                </tr>
+                <tr>
+                <td>&nbsp;</td><td  align="right"><input type = "submit" id="modal-open" class="button-link" value = " 確定 "></td>
+                </tr>
+            </table>
+            <input type = "hidden" value = "sign">
+            <a href = "loginCheck.php" id = "sendButton">キャンセル</a>
+            <a href = "signUpCheck.php" id = "sendButton">登録</a>
+	    <!-- </form>-->
+    </div>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="modal.js"></script>
+</body>
+</html>

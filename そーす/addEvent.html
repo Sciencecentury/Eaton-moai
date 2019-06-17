@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang = "ja" dir = "ltr">
+<head>
+    <meta charset="utf-8">
+    <title>予定追加</title>
+    <link type = "text/css" rel = "stylesheet" href = "addEvent.css">
+</head>
+<body>
+    <h1 id = "title">予定の追加</h1>
+    <div id = "modal-content">
+        <h1> <p style = "font-size : 40px">追加完了</p></h1>
+        <p><a id = "modal-close" class = "button-link">了解</a></p>
+    </div>
+    <!-- <form> -->
+        <table align = "center">
+            <div class = "eventitle">
+        <tr>
+        <th>タイトル</th>
+        <th><input type="search" name="title" autocomplete="on" list="title" placeholder="予定のタイトル" required>
+                <datalist id="title">
+                    <option value="ウィキペディア">
+                    <option value="ウィルス対策">
+                    <option value="ウィンドウズ">
+                </datalist>
+        </th>
+        </tr>
+        </div>
+
+        <div class = "group">
+        <tr>
+        <th>組</th>
+        <th><input type="search" name="group" autocomplete="on" list="group" placeholder="使用する組">
+                <datalist id="group">
+                    <option value="さくら">
+                    <option value="ふじ">
+                    <option value="たんぽぽ">
+                </datalist>
+        </th>
+        </tr>
+        </div>
+
+        <div class="place">
+        <tr>
+        <th>場所</th>
+        <th><input type="search" name="place"  autocomplete="on" list="place" placeholder="使用する場所">
+                <datalist id="place">
+                    <option value="職員室">
+                    <option value="運動場">
+                    <option value="給食室">
+                </datalist>
+        </th>
+        </tr>
+        </div>
+
+        <div class="starttime">
+        <tr>
+        <th>開始時間</th>
+        <th><input type="datetime-local" name = "starttime"></th>
+        </th>
+        </tr>
+        </div>
+
+
+        <div class="endtime">
+        <tr>
+        <th>終了時間</th>
+        <th><input type="datetime-local" name = "endtime"></th>
+        </th>
+        </tr>
+        </div>
+
+        <div class="note">
+        <tr>
+        <td>&nbsp;</td><td  align="right"><input type = "submit" id="modal-open" class="button-link" value = " 確定 "></td>
+        </tr>
+        </table>
+        <label for="note" style = "font-size : 22px;">備考<br></label>
+        <textarea id="note" name="note" cols="50" rows="8" placeholder="備考欄"></textarea><br>
+        </div>
+        <div class="submit">
+        <a href = "#" id = "sendButton">キャンセル</a>
+        <a href = "#" id = "sendButton">追加</a>
+        </div>
+    <!-- </form> -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="modal.js"></script>
+</body>
+</html>

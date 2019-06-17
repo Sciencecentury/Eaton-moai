@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang = "ja" dir = "ltr">
+<head>
+    <meta charset="utf-8">
+    <title>ログイン</title>
+    <link href = "login.css" rel = "stylesheet" type = "text/css">
+</head>
+<body>
+    <div id = "back">
+        <h1 id = "title">ログイン</h1>
+	    <div id = "modal-content">
+		<h1><p style = "font-size : 40px">ログイン完了</p></h1>
+		<p><a id = "modal-close" class = "button-link">了解</a></p>
+	</div>
+    <!-- <form action = "loginCheck.php" method = "post" style = "display:inline"> -->
+            <table align = "center">
+                <tr>
+                <th>社員番号</th>
+                <th><input type  = "text" name = "uname"></th>
+                </tr>
+                <br>
+                <tr>
+                <th>パスワード</th>
+                <th><input type = "password" name = "password"></th>
+                </tr>
+                <!-- <br> -->
+            <!-- hiddenパラメータを送信 -->
+            <input type = "hidden" name = "in" value = "in">
+            <td>&nbsp;</td><td  align="right"><input type = "submit" id="modal-open" class="button-link" value = " 確定 "></td>
+            <tr>
+        </table>
+
+            <!-- <input type = "submit" id = "sendButton" value = "ログイン"> -->
+            <a href = "loginCheck.php" id = "sendButton">キャンセル</a>
+            <a href = "loginCheck.php" id = "sendButton">ログイン</a>
+    <!-- </form> -->
+    <a href = "signUp.html" id = "newButton">新規登録</a>
+</div>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>

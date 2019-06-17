@@ -1,0 +1,32 @@
+.btn {
+    background:transparent url(test.png) no-repeat 0 0;
+    display: block;
+    width:35px;
+    height: 35px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    cursor: pointer;
+    z-index: 200;
+}
+.peke {
+    background-position: -35px 0;
+}
+.drawr {
+    display: none;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0px;
+    left:0;
+    width:260px;
+    padding:60px 0 20px 20px;
+    z-index: 100;
+}
+#menu li {
+    width:260px;
+}
+#menu li a {
+    color:#fff;
+    display: block;
+    padding: 15px;
+}
