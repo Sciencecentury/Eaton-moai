@@ -1,0 +1,42 @@
+body{
+    text-align : center;
+    margin : 0;
+    background : #ffffff;
+    font-family : "UD デジタル 教科書体 NP-R";
+}
+
+#title{
+    font-family : "UD デジタル 教科書体 NP-R";
+    background: #b4c7e7;
+    letter-spacing : 0.2em;
+    font-size : 40px;
+
+    padding : 10px 0px;
+    margin : 0px 0px;
+
+    padding : 0.31em 0em;
+}
+
+#back{
+    background : #ececec;
+    padding : 0px 0px 30px 0px;
+    margin : 100px 450px 150px 450px;
+
+}
+
+table {
+    font-size : 20px;
+    padding : 0px 0px 20px 0px;
+    /* margin : 100px 500px 200px 500px; */
+}
+
+#sendButton{
+    display : inline-block;
+    padding : 0.5em 1em;
+    background : #b4c7ef;
+    text-decoration : none;
+    color : #000000;
+    border-radius : 3px;
+    margin : 10;
+    margin-right : 30px;
+}

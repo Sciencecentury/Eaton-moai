@@ -1,0 +1,17 @@
+body{
+    background-color : #b4c7e7;
+    text-align : center;
+    margin : 0;
+    font-family : "UD デジタル 教科書体 NP-R";
+}
+
+
+#sendButton{
+    padding : 0.3em 5em;
+    background : #ffffff;
+    text-decoration : none;
+    color : #000000;
+    border-radius : 3px;
+    margin : 10;
+    /* margin-right : 30px; */
+}
