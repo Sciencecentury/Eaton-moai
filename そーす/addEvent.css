@@ -1,41 +1,17 @@
-/* @charset "UTF-8"; */
-/*
-@media screen and (max-width: 360px * 640px) {
-
-  .title{
-    text-align: center;
-  }
-  .group{
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 360px * 640px) {
-
-  .title{
-    text-align: center;
-  }
-  .group{
-    text-align: center;
-  }
-} */
-
-body{
+﻿body{
     text-align : center;
     margin : 0;
     background : #ffffff;
     font-family : "UD デジタル 教科書体 NP-R";
 }
 
-#title{
+.mainTitle{
     font-family : "UD デジタル 教科書体 NP-R";
-    background: #b4c7e7;
+    background : #b4c7e7;
     letter-spacing : 0.2em;
     font-size : 40px;
-
     padding : 10px 0px;
     margin : 0px 0px 20px 0px;
-
     padding : 0.31em 0em;
 }
 
@@ -43,7 +19,6 @@ body{
     background : #ececec;
     padding : 0px 0px 30px 0px;
     margin : 100px 450px 150px 450px;
-
 }
 
 table {
@@ -52,55 +27,65 @@ table {
     /* margin : 100px 500px 200px 500px; */
 }
 
-#sendButton{
+.sendButton {
+    /* cursor        : pointer;     /* カーソル   */
+    /* transition    : .3s;         /* なめらか変化*/
+    /* box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    text-align : center;      /* 文字位置   */
+    font-family : inherit;
+    font-size : 12pt;
     display : inline-block;
+    padding : 12px 12px;
     padding : 0.5em 1em;
     background : #b4c7ef;
+    line-height : 1em;         /* 1行の高さ  */
+    border : 2px solid #b4c7ef;    /* 枠の指定*/
     text-decoration : none;
     color : #000000;
     border-radius : 3px;
-    margin : 20px;
-    margin-right : 30px;
+    margin : 20px  25px 25px 20px;
 }
 
-#modal-content {
-	width: 40% ;
-	margin: 40% ;
-	padding: 10px 20px ;
-	border: 2px solid #aaa ;
-	background: #fff ;
-	position: fixed ;
-	display: none ;
-	z-index: 2 ;
-
+.addButton {
+    text-align : center;      /* 文字位置   */
+    /* font-family : inherit; */
+    font-size : 10pt;
+    /* display : inline-block; */
+    padding : 1px 6px;
+    /* padding : 0.5em 1em; */
+    background : #b4c7ef;
+    line-height : 1em;         /* 1行の高さ  */
+    border : 2px solid #b4c7ef;    /* 枠の指定*/
+    text-decoration : none;
+    color : #000000;
+    border-radius : 3px;
+    /* margin : 20px  25px 25px 20px; */
 }
 
-#modal-overlay {
-	z-index: 1 ;
-	display: none ;
-	position: fixed ;
-	top: 0 ;
-	left: 0 ;
-	width: 100% ;
-	height: 120% ;
-	background-color: rgba( 0,0,0, 0.75 ) ;
+/* --------------------------------------------------------------------------------------- */
+/* ポップアップ */
+/* ---------------------------------------------------------------------------------------- */
+#layer {
+    display: none;	/* 初期表示は非表示 */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.20;
 }
 
-.button-link {
-	color: #00f ;
-	text-decoration: underline ;
-}
-
-.button-link:hover {
-	cursor: pointer ;
-	color: #f00 ;
-}
-#modal-close{
-	background : #b4c7ef;
-	text-decoration : none;
-	color : #000000;
-	border-radius : 3px;
-	padding : 0.5em 1em;
-	margin : 80px 80px 20px 80px;
-	font-size : 20px;
+#popup {
+    display: none;	/* 初期表示は非表示 */
+    position : fixed;
+    left: 22%;
+    top: 20%;
+    width: 800px;
+    height: 300px;
+    /* margin-left: -150px;
+    margin-top: -100px; */
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
 }
