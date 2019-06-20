@@ -1,4 +1,4 @@
-$(function($) {
+﻿$(function($) {
     WindowHeight = $(window).height();
     $('.drawr').css('height', WindowHeight); //メニューをwindowの高さいっぱいにする
 

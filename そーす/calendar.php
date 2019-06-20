@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     // 今日の日付を取得
     $today = date("Y.m.d", time());
 ?>
