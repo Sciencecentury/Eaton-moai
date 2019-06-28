@@ -1,20 +1,6 @@
-tree 85908c0a02e35882e47bfcd7fa6db317396026dc
-parent 6a09fd49c3470c92cec35041046f5165fe74cc93
-parent a1b38bd4e6dc6340b56a5164aeaba37b55f4515e
-author iwane <43581076+Sciencecentury@users.noreply.github.com> 1557293140 +0900
-committer GitHub <noreply@github.com> 1557293140 +0900
-gpgsig -----BEGIN PGP SIGNATURE-----
- 
- wsBcBAABCAAQBQJc0mhUCRBK7hj4Ov3rIwAAdHIIADyGxxsdyA4FjVavtMEsg6Ah
- GFCyhRT+1O0Q2wgGHSkDnqeXTGA8pySEM/H9KUNsZJQyI4Ts1vfK0v1qriMCihnr
- zdWscxzajzjzDOjFH/1r/ps6wrVgFZq3AJNtMReQ1P2EHxR9W3Td0qv+XRGlVXrj
- DVS0RmqjRjZ6lOFzQgTROJc4J9PyVlwOmXHLRJcVtaINYypruhCOqVlxMFuEmhxB
- J90mZTjajjlj8dbh6pnrfb8LPXb/nKrfeA/9/IZ13FU+cmMw8884PfZt5aFVWsSM
- sGdDz35SlBjVbMy18bRhFP1wJh9cLQWVky90nEnABj5hNEN/JBCU92JFhANiE7g=
- =LlwZ
- -----END PGP SIGNATURE-----
- 
+tree a07564656f983a7066ee7b21d42217eda72c0b19
+parent 0fdbd643a4ddb6afc70abc0b06aef52f0f191d85
+author makino <harukimakino1109@gmail.com> 1559023426 +0900
+committer makino <harukimakino1109@gmail.com> 1559023426 +0900
 
-Merge pull request #6 from Sciencecentury/taiga
-
-Create 他班の質問事項.txt
+議事録追加
