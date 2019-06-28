@@ -161,7 +161,7 @@
 <!-------------------------------------------------------------------------------------------------->
         <tr class = "taskCell">
             <td>
-                <a id = "calendarShow"><img src = "label2.png"></a>
+                <a id = "calendarShow"><div class = "tagTitle">運動会</div></a>
                     <div id = "calendarLayer" class = "layer"></div>
                     <div id = "calendarPopup" class = "popup">
                     <div class = "calendarBackColor">
@@ -203,19 +203,19 @@
                     </div>
             </td>
             <td></td>
-            <td><img src = "label.png"></td>
+            <td><div class = "tagTitle">ゲスト</div></td>
             <td></td>
             <td></td>
-            <td><img src = "label2.png"></td>
+            <td><div class = "tagTitle">散歩</div></td>
             <td></td>
         </tr>
         <tr class = "taskCell">
-            <td><img src = "label2.png"></td>
+            <td><div class = "tagTitle">お花見</div></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
-            <td><img src = "label.png"></td>
+            <td><div class = "tagTitle">遠足</div></td>
             <td></td>
         </tr>
         <tr class = "taskCell">
