@@ -13,9 +13,9 @@
 <head>
     <meta charset = "utf-8">
     <title>予定の追加</title>
-    <link type = "text/css" rel = "stylesheet" href = "css/addEventImport.css">
+    <link type = "text/css" rel = "stylesheet" href = "../css/addEventImport.css">
     <script src = "//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src = "js/addEvent.js"></script>
+    <script src = "../js/addEvent.js"></script>
 </head>
 <!--------------------------------------------------------------------------------------------------------->
 <!-- 予定追加する画面 -->
@@ -53,7 +53,7 @@
                 </tr>
             </div>
 <!--------------------------------------------------------------------------------------------------------->
-<!-- 組設定部分 -->
+<!-- クラス設定部分 -->
 <!--------------------------------------------------------------------------------------------------------->
             <div class = "className">
                 <tr>

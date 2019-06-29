@@ -8,7 +8,7 @@
     <!-- css、ajax、js読み込み -->
     <link href = "../css/calendarImport.css" rel = "stylesheet" type = "text/css">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src = "calendar.js"></script>
+    <script src = "../js/calendar.js"></script>
 </head>
 <body>
 <!-------------------------------------------------------------------------------------------------->
