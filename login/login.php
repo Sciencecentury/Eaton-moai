@@ -36,7 +36,7 @@
         </form>
         <!-- カレンダー画面へ -->
         <a href = "../calendar/calendar.php" class = "sendButton sendData">キャンセル</a>
-        <!-- アカウント新規登録画面へ -->
+        <!-- 新規登録画面へ -->
         <a href = "../signUp/signUp.php" class = "sendData" style = "font-size : 17px">新規登録</a>
     </span>
     </div>
