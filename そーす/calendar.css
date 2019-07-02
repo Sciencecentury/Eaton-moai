@@ -1,0 +1,85 @@
+﻿/* ----------------------------------------------------------------------- */
+/* 日付の表示 */
+/* ----------------------------------------------------------------------- */
+#today{
+    font-size : 48;
+    font-family : "游ゴシック Light";
+    position : relative; left : 960; top : 30;
+
+}
+/* ----------------------------------------------------------------------- */
+/* 月～金の文字列の表示 */
+/* ----------------------------------------------------------------------- */
+/* #week0{
+    padding : 80;
+} */
+
+ #week{
+    /* 配置を調節する */
+    position : relative; top : 40;
+    /* フォントサイズ */
+    font-size : 20;
+    /* 文字列真ん中寄せ */
+    text-align : center;
+    /* フォントファミリー指定 */
+    /* font-family : "游ゴシック"; */
+    font-family : "UD デジタル 教科書体 NP-R";
+    /* 文字の間隔をあける */
+    /* letter-spacing : 5em; */
+    /* margin-right : -80em; */
+    /* 左に寄るのを防ぐ() */
+    /* text-indent: 140px; */
+    /*背景色*/
+    background: #b4c7e7;
+    /* 領域内のスペース *margin : 【】【】 */
+    padding: 0.5em 0em;
+    /* 領域間のスペース margin : 【縦の余白】【横の余白】*/
+    margin: 0em 1em;
+}
+
+#spacing{
+  letter-spacing : 8em;
+}
+
+#sun{
+    color : #ff3f3f;
+}
+
+#sat{
+    color : #2e75b6 ;
+}
+
+
+
+.btn {
+    background:transparent url(btn.png) no-repeat 0 0;
+    display: block;
+    width:35px;
+    height: 35px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    cursor: pointer;
+    z-index: 200;
+}
+.peke {
+    background-position: -35px 0;
+}
+.drawr {
+    display: none;
+    background-color:rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0px;
+    left:0;
+    width:260px;
+    padding:60px 0 20px 20px;
+    z-index: 100;
+}
+#menu li {
+    width:260px;
+}
+#menu li a {
+    color:#fff;
+    display: block;
+    padding: 15px;
+}
