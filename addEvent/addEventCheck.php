@@ -41,11 +41,11 @@
         $endTime = $_POST["endTime"];// 終了時刻
         $note = $_POST["note"];// 備考
 
-        // 受け取った全ての値が不正でないか検証
-        // 不正と見なす値：
-        if(!preg_match("/^[a-zA-Z0-9]+$/", $userName) || !preg_match("/^[a-zA-Z0-9]+$/", $password) || !preg_match("/^[a-zA-Z0-9]+$/", $checkPassword)){
-            // 正しくなかった場合
-            $sendMesseage = "入力値が正しくありません。使用できる文字は英数字と_(アンダーバー)のみです。";
+
+        // 受け取った値の、開始日時より終了日時のほうが早ければ不正とみなす
+        if()){
+            // 不正だった場合
+            $sendMesseage = "開始時間と終了時間の指定が不正です。";
             form($sendMesseage);
             exit;
         }

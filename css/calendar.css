@@ -178,3 +178,13 @@ li {
 .operationButton {
     clear : both;
 }
+/* ----------------------------------------------------------------------- */
+/* 予定のラベル*/
+/* ----------------------------------------------------------------------- */
+.tagTitle {
+    font-size : 20px;
+    background-image : url(../calendar/label2.png);
+    padding : 10px 0px 10px 0px;
+    background-repeat : no-repeat;
+    background-position : center;
+}
