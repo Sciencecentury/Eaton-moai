@@ -1,0 +1,14 @@
+【会議日】2019/7/2
+【時間】2時間
+【参加者】全員
+【今日する内容】
+・今まで書いてきたsauceをlaravelに
+・MYSQLの手順書づくり
+・saucetreeについての講義
+
+【出来てないこと】
+・googlecalendarApiとの接続
+・AWSにプロジェクトを上げること
+・WBSの全体をかけていない
+・Laravelの基本的な書き方
+・AWS　OUTH認証
