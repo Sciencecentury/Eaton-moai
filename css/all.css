@@ -1,0 +1,750 @@
+/* ----------------------------------------------------------------------- */
+/*にょきっとばー全体
+/* ----------------------------------------------------------------------- */
+.drawrMenu {
+    display: none;
+    background-color:rgba(60, 179, 113, 0.8);
+    text-align : center;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width : 300px;
+    padding : 100px 0px 0px 0px;
+    z-index: 100;
+    font-size : 25px;
+    font-family : "UD Digi Kyokasho NK-R";
+    color : #f0f0f0;
+    letter-spacing : 5px;
+}
+/* ----------------------------------------------------------------------- */
+/* にょきっとばーの各項目のリンクの下線を消す */
+/* ----------------------------------------------------------------------- */
+.authLink {
+    text-decoration : none;
+
+}
+/* ----------------------------------------------------------------------- */
+/* にょきっとばーの見出し */
+/* ----------------------------------------------------------------------- */
+.menuHead {
+    font-size : 50px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* にょきっとばーを出すボタン */
+/* ----------------------------------------------------------------------- */
+.drawrOpenBtn {
+    background : transparent url(../img/btn.png) no-repeat 0 0;
+    display: block;
+    width : 45px;
+    height: 45px;
+    position : fixed;
+    top : 20px;
+    left : 20px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+/* ----------------------------------------------------------------------- */
+/* にょっきとばーをしまうボタン */
+/* ----------------------------------------------------------------------- */
+.menuCloseBtn {
+    background-position: -45px 0;
+}
+/* ----------------------------------------------------------------------- */
+/* にょっきとばーのカレンダーの下の項目を区切る線 */
+/* ----------------------------------------------------------------------- */
+.bar {
+    display: block;
+    width: 115%;
+    height: 1px;
+    margin : 20px 0px 20px -40px;
+    background-color: #ffffff;
+    border: 0;
+}
+/* ----------------------------------------------------------------------- */
+/* にょきっとばーのリストの点を消す */
+/* ----------------------------------------------------------------------- */
+.drawerList {
+    list-style: none;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 今日の日付の表示 */
+/* ----------------------------------------------------------------------- */
+.today {
+    font-size : 45px;
+    top : 80px;
+    left : 900px;
+    position : fixed;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 週移動の左矢印 */
+/* ----------------------------------------------------------------------- */
+.leftButton {
+    /* text-align : center; */
+    position: fixed;
+    /* top : 180px;
+    left : 0px; */
+    top : 80px;
+    left : 90px;
+
+    /* padding-right : 0px; */
+}
+
+/* ----------------------------------------------------------------------- */
+/* 週移動の右矢印 */
+/* ----------------------------------------------------------------------- */
+.rightButton {
+    top : 78px;
+    left : 270px;
+    /* left : 1301px; */
+    /* padding-right : 0px; */
+    /* margin : 200px; */
+    position: fixed;
+    float : right;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 現在の週に戻るボタン */
+/* ----------------------------------------------------------------------- */
+.nowWeekBack {
+    top : 100px;
+    left : 360px;
+    /* left : 1301px; */
+    /* padding-right : 0px; */
+    /* margin : 200px; */
+    position: fixed;
+    float : right;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 現在の週に戻るボタン・ポップアップ閉じるボタン・予定削除ボタン*/
+/* ----------------------------------------------------------------------- */
+.nowWeekBackButton, .closeButton, .deleteButton, .editButton{
+    font-family : "UD Digi Kyokasho NK-R";
+    font-size : 16px;
+	height: 40px;/*高さ*/
+	width: 120px;/*横幅*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+}
+
+/* ----------------------------------------------------------------------- */
+/* ポップアップ閉じるボタン */
+/* ----------------------------------------------------------------------- */
+.closeButton {
+    position : fixed;
+    top : 460px;
+    left : 600px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 予定編集ボタン */
+/* ----------------------------------------------------------------------- */
+.editButton {
+    position : fixed;
+    top : 460px;
+    left : 800px;
+}
+
+/* ----------------------------------------------------------------------- */
+/*予定削除ボタン */
+/* ----------------------------------------------------------------------- */
+.deleteButton {
+    position : fixed;
+    top : 460px;
+    left : 370px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 詳細ポップアップの内容 */
+/* ----------------------------------------------------------------------- */
+.taskDetail {
+    font-size : 22px;
+    position : fixed;
+    top : 230px;
+    left : 350px;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 一週間カレンダの表示されている月 */
+/* ----------------------------------------------------------------------- */
+.displayMonth {
+    position : fixed;
+    font-size : 40px;
+    font-family : "UD Digi Kyokasho NK-R";    
+    float : right;
+    top : 95px;
+    left : 180px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* にょきっとばーのリンク項目の色 */
+/* ----------------------------------------------------------------------- */
+.authLink {
+    color : #f0f0f0;
+    padding-right : 25px;
+}
+
+/* ----------------------------------------------------------------------- */
+/*タスクの詳細のポップアップ
+/* ----------------------------------------------------------------------- */
+.taskDetailPopup {
+    display : none;
+    position: fixed;
+
+    top : 120px;
+    left : 300px;
+
+    width : 550px;
+    height : 300px;
+
+    z-index: 10;
+    text-align : center;
+    background-color : #f0f0f0;
+    padding : 50px 100px 50px 100px;
+
+    font-family : "UD Digi Kyokasho NK-R";
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* タスク詳細(ポップアップ)のタイトル */
+/* ----------------------------------------------------------------------- */
+.taskTitle{
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    background : #b4c7e7;
+    
+    position : fixed;
+
+    top : 120px;
+    left : 300px;
+
+    width : 750px;
+    height : 80px;
+
+    text-align : center;
+    padding-top : 15px; 
+    font-size : 40px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* innerPopup */
+/* ----------------------------------------------------------------------- */
+.innerPopup {
+    display: none;
+    top : 120px;
+    left : 500px;
+    position: fixed;
+
+    width : 550px;
+    height : 300px;
+
+    z-index: 800;
+    text-align : center;
+    background-color : #f0f0f0;
+    padding : 50px 100px 50px 100px;
+
+    font-family : "UD Digi Kyokasho NK-R";
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px;
+
+}
+
+/* ----------------------------------------------------------------------- */
+/* 予定作成者の名前 */
+/* ----------------------------------------------------------------------- */
+.author {
+    position : fixed;
+
+    top : 190px;
+    left : 300px;
+
+    width : 750px;
+    height : 80px;
+
+    text-align : center;
+    font-size : 20px;
+}
+/* ----------------------------------------------------------------------- */
+/* 一週間カレンダーの曜日 */
+/* ----------------------------------------------------------------------- */
+.oneWeek{
+    text-align: center;
+    font-family : "UD Digi Kyokasho NK-R";
+    font-size : 25px;
+    background-color : #b4c7e7;
+    table-layout: fixed;
+    /* width : 160px; */
+    height : 50px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 一週間カレンダーの日付 */
+/* ----------------------------------------------------------------------- */
+.oneWeekDay {
+    text-align: center;
+    font-family : "UD Digi Kyokasho NK-R";
+    font-size : 25px;
+    background-color : #d5dbe4;
+    table-layout: fixed;
+    width : 165px;
+    height : 70px;
+
+}
+
+/* ----------------------------------------------------------------------- */
+/* カレンダーのテーブル */
+/* ----------------------------------------------------------------------- */
+.calendarTable {
+    top : 150px;
+    left : 80px;
+    position : fixed;
+    /* float : right;    */
+    border: 2px solid #b4c7e7;
+    border-collapse : collapse;
+    height : 450px;
+}
+
+.taskList { 
+    vertical-align : top;
+}
+
+td {
+    overflow: auto;
+
+    border: 2px solid #b4c7e7;
+}
+
+/* ----------------------------------------------------------------------- */
+/* 利用者の名前 */
+/* ----------------------------------------------------------------------- */
+.uname {
+    font-family : "UD Digi Kyokasho NK-R";
+    font-size : 20px;
+    position : fixed; 
+    top :20px;
+    left :80px;
+}
+
+/* ----------------------------------------------------------------------- */
+/* にょきっとばーのボタンの配置 */
+/* ----------------------------------------------------------------------- */
+.nyokiBar {
+    position:relative;
+    top:-15px;
+}
+
+/* ------- ---------------------------------------------------------------- */
+/* 予定の詳細ボタン */
+/* ----------------------------------------------------------------------- */
+.taskDetailPopupButton {
+    font-family : "UD Digi Kyokasho NK-R";
+    font-size: 20px;
+    border: 0px;
+    width:140px;
+    height:40px;
+    background: url(../img/label2.png) left top no-repeat;
+    margin : 5px;
+}
+
+/*----------------------------------------------------------------------*/
+/* 予定詳細ポップアップの詳細テーブル */
+/*----------------------------------------------------------------------*/
+.taskDetail table tr td{
+    /* border: 2px solid #b4c7e7; */
+    /* border-spacing: 0px; */
+    border: none;
+    border-spacing: 0px;
+
+}
+/*----------------------------------------------------------------------*/
+/* 予定詳細ポップアップの詳細テーブルの背景 */
+/*----------------------------------------------------------------------*/
+.taskDetail {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border-radius: 10px;
+    /* box-shadow : 0px 0px 8px rgba(0, 0, 0, 0.5); */
+
+}
+
+/*----------------------------------------------------------------------*/
+/* 予定詳細ポップアップの詳細テーブルのカラム名側 */
+/*----------------------------------------------------------------------*/
+.taskColumn {
+    text-align: left;
+    width : 100px;
+    /* border-collapse: separate; */
+    /* border-collapse : collapse; */
+    /* border: 2px solid #b4c7e7; */
+}
+
+/*----------------------------------------------------------------------*/
+/* 予定詳細ポップアップの詳細テーブルのデータ側 */
+/*----------------------------------------------------------------------*/
+.taskData {
+    text-align: right;
+    width : 180px;
+}
+
+/*----------------------------------------------------------------------*/
+/* 詳細ポップアップの備考 */
+/*----------------------------------------------------------------------*/
+.taskRemarksTitle {
+    position : fixed;
+    font-size : 25px;
+    top : 230px;
+    left : 825px;
+}
+
+/*----------------------------------------------------------------------*/
+/* 詳細ポップアップの備考内容 */
+/*----------------------------------------------------------------------*/
+.taskRemarks {
+    position : fixed;
+    font-size : 18px;
+    top : 270px;
+    left : 700px;
+    
+    text-align: start;
+
+    overflow-wrap: break-word;
+    width : 290px;
+    height : 135px;
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow : 0px 0px 8px rgba(0, 0, 0, 0.5); */
+
+    overflow: auto;
+
+    }
+
+
+/*----------------------------------------------------------------------*/
+/* 全画面に適応 */
+/*----------------------------------------------------------------------*/
+body{/* 適応の優先順位の関係で記述　必要なければ削除*/
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+
+}
+
+.loginBackColor{/*loginBackColorに適応*/
+	backGround-color: #ececec;
+	height: 280px;/*高さ*/
+    width: 500px;/*横幅*/
+    
+    position : fixed;
+    top : 150px;
+    left : 410px;
+	/*margin: auto;/*ブロックを自動で幅調整*/
+	border-radius: 10px;/*角を丸くする*/
+}
+
+.mainTitle{/*mainTitleに適応*/
+    backGround-color: #b4c7e7;/*mainTitleの背景色*/
+    
+    position : fixed;
+    text-align: center;/*テキスト中央揃え*/
+    font-size : 35px;
+
+    height: 65px;/*高さ*/
+	width: 500px;/*横幅*/
+    top : 120px;
+    left : 410px;
+    padding-top : 15px; 
+	border-radius: 10px 10px 0px 0px/ 10px 10px 0px 0px;/*角を丸くする 水平/垂直（左上、右上、右下、左下）*/
+}
+
+.ok_button{/*ログインのボタンに適応*/
+	height: 40px;/*高さ*/
+    width: 100px;/*横幅*/
+    
+    position: fixed;
+    top : 350px;
+    left : 450px;
+
+    font-size : 16px;
+	/*margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+}
+
+.cancel_button{
+	height: 40px;/*高さ*/
+    width: 100px;/*横幅*/
+    
+    position: fixed;
+    top : 350px;
+    left : 580px;
+
+    font-size : 16px;
+
+    margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+}
+
+/*----------------------------------------------------------------------*/
+/* ログインに適応 */
+/*----------------------------------------------------------------------*/
+
+.login_labels{/*ログインのラベルに適応*/
+	margin-top: 20px;/*上枠の外側の幅を指定*/
+	text-align: center;/*テキスト中央揃え*/
+	font-size: 130%;/*フォントのサイズ*/
+
+    position: fixed;
+    top : 240px;
+    left : 450px;
+}
+
+.login_label_name{
+	width: 250px;/*横幅*/
+	margin-left: 35px;/*左枠の外側の幅を指定*/
+}
+
+.login_label_password{
+	width: 250px;/*横幅*/
+	margin-left: 25px;/*左枠の外側の幅を指定*/
+    margin-top : 7px;
+}
+
+.login_buttons{/*ログインのボタンの囲いに適応*/
+	margin-top: 10px;/*上枠の外側の幅を指定*/
+    margin-left: 60px;/*左枠の外側の幅を指定*/
+
+}
+
+.link_button{
+
+    position: fixed;
+    top : 360px;
+    left : 760px;
+    font-size : 18px;
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+}
+
+/*----------------------------------------------------------------------*/
+/* 新規登録に適応 */
+/*----------------------------------------------------------------------*/
+.register_label_name{
+	width: 250px;/*横幅*/
+	margin-left: 113px;/*左枠の外側の幅を指定*/
+}
+
+.register_label_password{/*ラベルのパスワード*/
+	width: 250px;/*横幅*/
+	margin-left: 104px;/*左枠の外側の幅を指定*/
+}
+
+.register_label_password_confirmation{/*ラベルのパスワード（確認用）*/
+	width: 250px;/*横幅*/
+	margin-left: 25px;/*左枠の外側の幅を指定*/
+}
+
+.register_buttons{/*新規登録のボタンの囲いに適応*/
+	margin-top: 10px;/*上枠の外側の幅を指定*/
+	margin-left: 130px;/*左枠の外側の幅を指定*/
+}
+
+.Registration_button {
+	height: 40px;/*高さ*/
+    width: 100px;/*横幅*/
+    
+    position: fixed;
+    top : 360px;
+    left : 500px;
+
+    font-size : 16px;
+	/*margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+}
+
+.register_cancel_button {
+	height: 40px;/*高さ*/
+    width: 100px;/*横幅*/
+    
+    position: fixed;
+    top : 360px;
+    left : 670px;
+
+    font-size : 16px;
+
+    margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+}
+/*----------------------------------------------------------------------*/
+/* 予定の追加,予定の編集に適応 */
+/*----------------------------------------------------------------------*/
+.Event_labels{/*ラベルに適応*/ 
+	margin-top: 20px;/*上枠の外側の幅を指定*/
+	text-align: center;/*テキスト中央揃え*/
+    font-size: 150%;/*フォントのサイズ*/
+    position: fixed;
+    top : 100px;
+    left : 470px;
+}
+.Event_label_title{/*タイトルに適応*/
+	width: 213px;/*横幅*/
+	margin-left: 48px;/*左枠の外側の幅を指定*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	margin-right: 50px;/*右枠の外側の幅を指定*/
+	font-size: 90%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_label_class{/*組に適応*/
+	width: 213px;/*横幅*/
+	margin-left: 106px;/*左枠の外側の幅を指定*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	margin-right: 50px;/*右枠の外側の幅を指定*/
+	font-size: 90%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_label_place{/*場所に適応*/
+	width: 213px;/*横幅*/
+	margin-left: 79px;/*左枠の外側の幅を指定*/
+	margin-bottom: 30px;/*下枠の外側の幅を指定*/
+	margin-right: 50px;/*右枠の外側の幅を指定*/
+	font-size: 90%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_startDay{/*開始日時の日付に適応*/
+	width: 185px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+
+}
+.Event_startTime{/*開始日時の時間に適応*/
+	width: 100px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_endDay{/*終了日時の日付に適応*/
+	width: 185px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_endTime{/*終了日時の時間に適応*/
+	width: 100px;/*横幅*/
+	margin-bottom: 10px;/*下枠の外側の幅を指定*/
+	font-size: 68%;/*フォントのサイズ*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
+.Event_end_div{/*終了日時に適応*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+}
+.Event_remarks{/*備考に適応*/
+	height: 120px;/*高さ*/
+	width: 350px;/*横幅*/
+	font-size: 80%;/*フォントのサイズ*/
+}
+.Event_buttons{/*ボタンの囲いに適応*/
+	margin-top: 20px;/*上枠の外側の幅を指定*/
+	margin-left: 130px;/*左枠の外側の幅を指定*/
+}
+.Event_cancel{/*キャンセルのリンクに適応*/
+    position : fixed;
+    top : 560px;
+    left : 670px;
+    margin-left: 40px;/*左枠の外側の幅を指定*/
+    height: 40px;/*高さ*/
+    width: 100px;/*横幅*/
+
+
+    font-size : 16px;
+	/*margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+
+}
+/* タイトルの位置に適用 */
+.addEventMainTitle {
+    backGround-color: #b4c7e7;/*mainTitleの背景色*/
+    
+    position : fixed;
+    text-align: center;/*テキスト中央揃え*/
+    font-size : 35px;
+
+    height: 65px;/*高さ*/
+	width: 500px;/*横幅*/
+    top : 2px;
+    left : 410px;
+    padding-top : 15px; 
+	border-radius: 10px 10px 0px 0px/ 10px 10px 0px 0px;/*角を丸くする 水平/垂直（左上、右上、右下、左下）*/
+}
+
+.addEventBackColor {
+    backGround-color: #ececec;
+    
+	height: 590px;/*高さ*/
+    width: 500px;/*横幅*/
+    
+    position : fixed;
+    top : 25px;
+    left : 410px;
+	/*margin: auto;/*ブロックを自動で幅調整*/
+	border-radius: 10px;/*角を丸くする*/
+}
+
+.add_ok_button {
+    position: fixed;
+    top : 560px;
+    left : 530px;
+	height: 40px;/*高さ*/
+    width: 100px;/*横幅*/
+    
+    font-size : 16px;
+	/*margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*優先順位の関係で動いていない*/
+
+}
+/*----------------------------------------------------------------------*/
+/* 予定の編集に適応 */
+/*----------------------------------------------------------------------*/
+
+.changeEvent_p{/*編集するタイトルに適応*/
+	text-align: center;/*テキスト中央揃え*/
+}
+
+.changeEvent_cancel_button{/*キャンセルボタン*/
+	height: 40px;/*高さ*/
+	width: 100px;/*横幅*/
+	margin-bottom: 20px;/*下枠の外側の幅を指定*/
+	margin-left: 30px;/*左枠の外側の幅を指定*/
+	border-radius: 5px;/*角を丸くする*/
+	border-color: #b4c7ef;/*枠色*/
+	backGround-color: #b4c7ef;/*背景色*/
+	font-family : "UD Digi Kyokasho NK-R";/*フォント*/
+}
